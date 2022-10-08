@@ -19,7 +19,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          The best damn sexy swag on the web!
+          The best swag store on the web!
         </p>
 
         <ul className={styles.grid}>
