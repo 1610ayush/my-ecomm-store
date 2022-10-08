@@ -1,0 +1,23 @@
+[
+    {
+        "id": "prod_MZsp6bM85v60XX",
+        "title": "Wrogn Shirt",
+        "description": "Bring swag to your wardrobe with this high quality shirt.",
+        "image": "/images/shirt.jpeg",
+        "price": 1300
+    },
+    {
+        "id": "prod_MZsrsHULmy7Ihq",
+        "title": "Wrogn Watch",
+        "description": "Keep yourself updated with this cool wrogn watch.",
+        "image": "/images/watch2.jpg",
+        "price": 900
+    },
+    {
+        "id": "prod_MZszwAh3o5MLR2",
+        "title": "Wrogn Sneaker",
+        "description": "Keep it casual for your date with this classic sneaker.",
+        "image": "/images/sneaker2.jpg",
+        "price": 2299
+    }
+]
