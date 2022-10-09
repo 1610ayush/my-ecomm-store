@@ -1,6 +1,6 @@
 E-commerce website built using Next.js integrated with stripe checkout for payments.
 
-You can see this website live on https://my-ecomm-store-eowfgy8o3-1610ayush.vercel.app/
+You can see this website live on https://my-ecomm-store-rose.vercel.app/
 
 
 
