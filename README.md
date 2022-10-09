@@ -1,4 +1,4 @@
-E-commerce website built using Next.js integrated with stripe checkout for payments.
+E-commerce website built using Next.js, integrated with stripe checkout for payments. We can add items to cart and update our cart.
 
 You can see this website live on https://my-ecomm-store-rose.vercel.app/
 
