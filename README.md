@@ -1,3 +1,9 @@
+E-commerce website built using Next.js integrated with stripe checkout for payments.
+
+You can see this website live on https://my-ecomm-store-eowfgy8o3-1610ayush.vercel.app/
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
