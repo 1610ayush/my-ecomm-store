@@ -1,11 +1,15 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import {useCart} from '../hooks/use-cart'
+import Link from 'next/link'
 
 import products from "../products.json"
-import { initiateCheckout } from '../lib/payments'
+
+
 
 export default function Home() {
+  const {addToCart} = useCart();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -15,36 +19,38 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Style yourself!
-        </h1>
+        <Link href='/'>
+          <a>
+            <h1 className={styles.title}>
+              Style yourself!
+            </h1>
+          </a>
+        </Link>
 
         <p className={styles.description}>
           The best swag store on the web!
         </p>
 
+        
         <ul className={styles.grid}>
           {products.map(product => {
             const {id, title, price, description, image} = product;
             return(
               <li key={id} className={styles.card}>
-                <a href="#" >
-                  <img src={image} alt={title} />
-                  <h3>{title}</h3>
-                  <p>₹{price}</p>
-                  <p>{description}</p>
-                </a>
+                <Link href={`/products/${id}`}>
+                  <a>
+                    <img src={image} alt={title} />
+                    <h3>{title}</h3>
+                    <p>₹{price}</p>
+                    <p>{description}</p>
+                  </a>
+                </Link>
                 <p>
-                  <button className={styles.button} onClick={() => {
-                    initiateCheckout({
-                      lineItems: [
-                        {
-                          price: id,
-                          quantity: 1
-                        }
-                      ]
-                    });
-                  }}>Buy Now</button>
+                  <button className={styles.button} onClick={() =>
+                    addToCart({
+                      id
+                    })
+                  }>Add to Cart</button>
                 </p>
               </li>
             )

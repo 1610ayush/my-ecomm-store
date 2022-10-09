@@ -20,11 +20,12 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: black;
+    background: white;
   }
 }
 
 img{
-  max-width: 100%;
+  width: 200px;
+  height: 200px;
 }
